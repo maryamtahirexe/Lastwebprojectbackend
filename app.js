@@ -21,7 +21,7 @@ app.use(express.json());
 
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 app.use(cors({
-  origin: 'http://localhost:5173', // Allow only your frontend origin
+  origin: 'https://web-project-last.vercel.app', // Allow only your frontend origin
   methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allowed HTTP methods
   credentials: true, // Include cookies if needed
 }));
